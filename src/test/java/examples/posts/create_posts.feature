@@ -4,7 +4,7 @@ Feature: create posts
   Background:
     * url 'https://jsonplaceholder.typicode.com'
 
-  Scenario: create a post
+  Scenario: create a valid post
     * def valid_post =
       """
       {
