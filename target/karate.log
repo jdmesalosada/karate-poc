@@ -1,0 +1,752 @@
+12:57:02.531 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:57:02.610 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^delete booking$
+12:57:06.258 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:57:06.831 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://restful-booker.herokuapp.com/booking/1
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:57:07.587 [main] DEBUG com.intuit.karate - response time in milliseconds: 747
+1 < 403
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 9
+1 < Etag: W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+1 < Date: Sat, 26 Mar 2022 17:57:07 GMT
+1 < Via: 1.1 vegur
+Forbidden
+12:57:09.108 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/sample/resftul_booker.feature
+13:05:21.094 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:05:21.105 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648317921105
+13:05:21.152 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^delete booking$
+13:05:24.387 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:05:24.514 [main] ERROR com.intuit.karate - src/test/java/examples/sample/resftul_booker.feature:7
+* header Content-Type = application/json
+js failed:
+>>>>
+01: application/json
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "application" is not defined
+- <js>.:program(Unnamed:1)
+
+src/test/java/examples/sample/resftul_booker.feature:7
+13:05:25.845 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/sample/resftul_booker.feature
+13:05:50.145 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:05:50.160 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648317950159
+13:05:50.227 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^delete booking$
+13:05:53.076 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:05:53.627 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://restful-booker.herokuapp.com/booking/1
+1 > Content-Type: application/json
+1 > Cookie: token=abc123
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:05:54.384 [main] DEBUG com.intuit.karate - response time in milliseconds: 752
+1 < 403
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 9
+1 < Etag: W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+1 < Date: Sat, 26 Mar 2022 18:05:54 GMT
+1 < Via: 1.1 vegur
+Forbidden
+13:05:54.391 [main] ERROR com.intuit.karate - src/test/java/examples/sample/resftul_booker.feature:11
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 752, url: https://restful-booker.herokuapp.com/booking/1, response: 
+Forbidden
+src/test/java/examples/sample/resftul_booker.feature:11
+13:05:56.083 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/sample/resftul_booker.feature
+13:06:53.470 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:06:53.480 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648318013480
+13:06:53.526 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^delete booking$
+13:06:56.848 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:06:57.446 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://restful-booker.herokuapp.com/booking/1
+1 > Content-Type: application/json
+1 > Authorisation: Basic YWRtaW46cGFzc3dvcmQxMjM=
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:06:58.230 [main] DEBUG com.intuit.karate - response time in milliseconds: 779
+1 < 403
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: text/plain; charset=utf-8
+1 < Content-Length: 9
+1 < Etag: W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+1 < Date: Sat, 26 Mar 2022 18:06:58 GMT
+1 < Via: 1.1 vegur
+Forbidden
+13:06:58.235 [main] ERROR com.intuit.karate - src/test/java/examples/sample/resftul_booker.feature:11
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 779, url: https://restful-booker.herokuapp.com/booking/1, response: 
+Forbidden
+src/test/java/examples/sample/resftul_booker.feature:11
+13:06:59.835 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/sample/resftul_booker.feature
+13:12:20.807 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:12:20.816 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648318340816
+13:12:20.867 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^delete booking$
+13:12:24.299 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:12:25.066 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"password123"}
+
+13:12:25.854 [main] DEBUG com.intuit.karate - response time in milliseconds: 784
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-mr0/uk75tbdGUteyHuDccqMbjcw"
+1 < Date: Sat, 26 Mar 2022 18:12:25 GMT
+1 < Via: 1.1 vegur
+{"token":"38520951723dd65"}
+13:12:25.859 [main] INFO  com.intuit.karate - [print] 38520951723dd65 
+13:12:27.128 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/sample/resftul_booker.feature
+13:15:32.447 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:15:32.456 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648318532456
+13:15:32.511 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^delete booking$
+13:15:35.848 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:15:36.611 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"password123"}
+
+13:15:37.456 [main] DEBUG com.intuit.karate - response time in milliseconds: 841
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-qUlLzwPEhP1qWkaQ4n/XFAm2y+Q"
+1 < Date: Sat, 26 Mar 2022 18:15:37 GMT
+1 < Via: 1.1 vegur
+{"token":"4494c5084c5d560"}
+13:15:37.460 [main] INFO  com.intuit.karate - [print] 4494c5084c5d560 
+13:15:37.491 [main] DEBUG com.intuit.karate - request:
+2 > DELETE https://restful-booker.herokuapp.com/booking/1
+2 > Content-Type: application/json
+2 > Authorisation: Basic 4494c5084c5d560
+2 > Host: restful-booker.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:15:37.871 [main] DEBUG com.intuit.karate - response time in milliseconds: 380
+2 < 403
+2 < Server: Cowboy
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Content-Type: text/plain; charset=utf-8
+2 < Content-Length: 9
+2 < Etag: W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+2 < Date: Sat, 26 Mar 2022 18:15:37 GMT
+2 < Via: 1.1 vegur
+Forbidden
+13:15:37.874 [main] ERROR com.intuit.karate - src/test/java/examples/sample/resftul_booker.feature:28
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 380, url: https://restful-booker.herokuapp.com/booking/1, response: 
+Forbidden
+src/test/java/examples/sample/resftul_booker.feature:28
+13:15:39.378 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/sample/resftul_booker.feature
+13:19:22.855 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:19:22.863 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648318762863
+13:19:22.915 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 6 - ^delete booking$
+13:19:26.357 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:19:27.083 [main] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"password123"}
+
+13:19:27.827 [main] DEBUG com.intuit.karate - response time in milliseconds: 739
+1 < 200
+1 < Server: Cowboy
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-WdHpyCQ9x4ld06GIfNjo26Cfe8o"
+1 < Date: Sat, 26 Mar 2022 18:19:27 GMT
+1 < Via: 1.1 vegur
+{"token":"a34607d4000821f"}
+13:19:27.832 [main] INFO  com.intuit.karate - [print] a34607d4000821f 
+13:19:27.839 [main] DEBUG com.intuit.karate - request:
+2 > DELETE https://restful-booker.herokuapp.com/booking/1
+2 > Content-Type: application/json
+2 > Authorisation: Basic YWRtaW46cGFzc3dvcmQxMjM=]
+2 > Host: restful-booker.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+2 > Accept-Encoding: gzip,deflate
+
+
+13:19:28.237 [main] DEBUG com.intuit.karate - response time in milliseconds: 398
+2 < 403
+2 < Server: Cowboy
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Content-Type: text/plain; charset=utf-8
+2 < Content-Length: 9
+2 < Etag: W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+2 < Date: Sat, 26 Mar 2022 18:19:28 GMT
+2 < Via: 1.1 vegur
+Forbidden
+13:19:28.240 [main] ERROR com.intuit.karate - src/test/java/examples/sample/resftul_booker.feature:30
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 398, url: https://restful-booker.herokuapp.com/booking/1, response: 
+Forbidden
+src/test/java/examples/sample/resftul_booker.feature:30
+13:19:29.695 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/sample/resftul_booker.feature
+07:10:26.885 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:10:26.894 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648901426893
+07:10:26.968 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 30 - ^Get user with specific id$
+07:10:30.320 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:10:30.923 [main] ERROR com.intuit.karate - karate.org.apache.http.ProtocolException: Target host is not specified, http call failed after 500 milliseconds for url: /api/users/5
+07:10:30.923 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:32
+When method GET
+http call failed after 500 milliseconds for url: /api/users/5
+src/test/java/examples/users/get_users.feature:32
+07:10:32.717 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:11:26.672 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:11:26.681 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648901486681
+07:11:26.748 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Get user with specific id$
+07:11:30.098 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:11:30.655 [main] ERROR com.intuit.karate - karate.org.apache.http.ProtocolException: Target host is not specified, http call failed after 451 milliseconds for url: /api/users/5
+07:11:30.656 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:31
+When method GET
+http call failed after 451 milliseconds for url: /api/users/5
+src/test/java/examples/users/get_users.feature:31
+07:11:32.326 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:12:12.930 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:12:12.940 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648901532939
+07:12:12.998 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^get users by id Datadriven$
+07:12:16.829 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:12:17.070 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^get users by id Datadriven$
+07:12:17.087 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:12:17.551 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/1
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:12:18.568 [main] DEBUG com.intuit.karate - response time in milliseconds: 1011
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:12:18 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: REVALIDATED
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ZDnkYS%2BTOPWCNLzQYinfyiQIpXRdprkKI3s41%2FsxM32pYlsQTWW1lxhpbOJNYGNxRsW5K3GPbyePPiWeNSejdAPpsVkR%2BCWgM9M%2FiKT5D%2FaPIdKO3K7dS4qRIKc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f5978d52ee0f887-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:12:18.644 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^get users by id Datadriven$
+07:12:18.658 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:12:18.666 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:12:19.162 [main] DEBUG com.intuit.karate - response time in milliseconds: 496
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:12:19 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: REVALIDATED
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xzM6o8zzbSzWL9wqsh5LlN%2FnbBFSnMq4IZuCaiKl%2Faaou7UwK2A4RHWOhHc0t1BGywz3txGd9XjGSz4X4FBZTPYp28IhGP8oSHQUFV9uUe2%2BqBZykeJSLdI80ss%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f5978d96a3ff88f-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:12:20.768 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:13:14.471 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:13:14.482 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648901594481
+07:13:14.557 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Get user with specific id$
+07:13:18.729 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:13:19.710 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:13:20.674 [main] DEBUG com.intuit.karate - response time in milliseconds: 953
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:13:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"11c-fbAvBCQSZgUU6dvLRqxYG0dwUTM"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: MISS
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OzMeK%2BqvEe5CDIVL2SV1G%2FbyqmWuP3zdvUosfuFtcrujbIWeWHDPCONPyzRNcuVO1ZbmQFPduketXXMDt23v7Z6QWcmDG2vEdyJyhYXAj5TcS%2BPrO5fjtgSJBQ8%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f597a595cfcf88b-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:13:20.865 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:33
+And match $ == {id:"1234",name:"John Smith"}
+match failed: EQUALS
+  $ | not equal | actual does not contain key - 'id' (MAP:MAP)
+  {"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+  {"id":"1234","name":"John Smith"}
+
+
+src/test/java/examples/users/get_users.feature:33
+07:13:22.877 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:16:44.154 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:16:44.167 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648901804166
+07:16:44.287 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Get user with specific id$
+07:16:47.943 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:16:48.557 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:16:49.032 [main] DEBUG com.intuit.karate - response time in milliseconds: 468
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:16:49 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"11c-fbAvBCQSZgUU6dvLRqxYG0dwUTM"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 209
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4C6gWizil0B3PfP1xL%2B%2F4nvRz%2BUowX4hb78t0GykldsMxmeW6FNlw2ErjmRWHBGnIg%2Fr3LYa8bTmHiJR1EYth0mbEhMjHfdM0xrD7EE93VSibZF39mJIvxXosGU%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f597f72784ae3e6-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:16:49.186 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:35
+And $ contains '5'
+no step-definition method match found for: $ contains '5'
+src/test/java/examples/users/get_users.feature:35
+07:16:50.954 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:17:08.375 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:17:08.388 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648901828388
+07:17:08.503 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Get user with specific id$
+07:17:11.609 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:17:12.233 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:17:12.719 [main] DEBUG com.intuit.karate - response time in milliseconds: 479
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:17:12 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"11c-fbAvBCQSZgUU6dvLRqxYG0dwUTM"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 232
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BkRJdfGAwmKXgV510TX7KSA%2BcPh3rp47tC6MKcuqGfh%2FY6j17cFDz7Wjb6AWsjvucZT7XIRzWVt1v0GuitjTDb1UIFAS1YBMhKBaVWQL%2FcWsT4W2jPDoFDi0Acc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f5980069d04e3e2-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:17:12.854 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:35
+And match $ contains '5'
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+  '5'
+
+
+src/test/java/examples/users/get_users.feature:35
+07:17:14.921 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:17:40.968 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:17:40.976 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648901860976
+07:17:41.054 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Get user with specific id$
+07:17:42.822 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:17:43.329 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:17:43.727 [main] DEBUG com.intuit.karate - response time in milliseconds: 392
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:17:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"11c-fbAvBCQSZgUU6dvLRqxYG0dwUTM"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 263
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EL4S5%2F3MeNeUWKSbJMOi%2FLmMC2XE%2BR8Gx1%2FSS57HCKCi95SHh%2FFL7M3pp6rznI%2Fj%2BiJkECCx8EhwR4NngCXHL93uJwkjaMapMOOVxDdj0zwJWZnj6Edl5NmlY7w%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f5980c868c4e3d6-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:17:43.844 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:35
+And match $ contains '"id":5'
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+  '"id":5'
+
+
+src/test/java/examples/users/get_users.feature:35
+07:17:45.364 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:18:09.086 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:18:09.095 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648901889094
+07:18:09.163 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Get user with specific id$
+07:18:11.072 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:18:11.545 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:18:11.923 [main] DEBUG com.intuit.karate - response time in milliseconds: 373
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:18:11 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"11c-fbAvBCQSZgUU6dvLRqxYG0dwUTM"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 291
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8ne3Z1Zl9s6C0YuoQAOi7u8fmo83bNad%2FDxZ0mSYtscAMmGgY93fw340QxK%2F4ONOVP3I25JklSNIrQNoVXz33HwMhdkQctrEuOqVRTcgQ02pFYHMV9RlLgEToOs%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f5981789f3af88b-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:18:12.042 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:35
+And match $ contains {"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"}
+net.minidev.json.parser.ParseException: Unexpected End Of File position 145: null
+src/test/java/examples/users/get_users.feature:35
+07:18:13.441 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:18:55.338 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:18:55.346 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648901935345
+07:18:55.440 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Get user with specific id$
+07:18:58.838 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:18:59.433 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:18:59.844 [main] DEBUG com.intuit.karate - response time in milliseconds: 402
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:18:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"11c-fbAvBCQSZgUU6dvLRqxYG0dwUTM"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 339
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vdhZKaRHHHubQscva59WvP2R1iUTz%2BMdqPbLvEyz6Wm0z4LQOsTonddCmoBb%2B4BLbNaXRsZqFiZsk7OjlBRAoMxzc4iYS%2Fnh5XFwHAGxWcQOe48qAjBYi6gqa7U%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f5982a4187df897-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:18:59.993 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:35
+And match $ contains {"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"}
+match failed: CONTAINS
+  $ | actual does not contain expected | actual does not contain key - 'id' (MAP:MAP)
+  {"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+  {"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"}
+
+
+src/test/java/examples/users/get_users.feature:35
+07:19:01.420 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:20:17.047 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:20:17.061 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648902017059
+07:20:17.130 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Get user with specific id$
+07:20:20.391 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:20:20.962 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:20:21.370 [main] DEBUG com.intuit.karate - response time in milliseconds: 403
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:20:21 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"11c-fbAvBCQSZgUU6dvLRqxYG0dwUTM"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 421
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lkVLctFLauyy08hiTS73MZh5Qk2b69MIrKMcXY4Et8s7B91MRJh0ifV9XlCQ4K4rmGuCQLf4el58doD5gNkWtlrzF%2F5GfWO9hSp1wcrz%2FDOxKM2XDGb7iBg0ZQU%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f5984a1bccbe788-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:20:21.564 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:35
+And match $ contains "email":"charles.morris@reqres.in"
+js failed:
+>>>>
+01: "email":"charles.morris@reqres.in"
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:7 Expected ; but found :
+"email":"charles.morris@reqres.in"
+       ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1252)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2205)
+- com.intuit.karate.core.ScenarioEngine.match(ScenarioEngine.java:1802)
+- com.intuit.karate.core.ScenarioEngine.matchResult(ScenarioEngine.java:178)
+
+src/test/java/examples/users/get_users.feature:35
+07:20:23.083 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:20:38.712 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:20:38.720 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648902038720
+07:20:38.815 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Get user with specific id$
+07:20:41.713 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:20:42.224 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:20:42.605 [main] DEBUG com.intuit.karate - response time in milliseconds: 375
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:20:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"11c-fbAvBCQSZgUU6dvLRqxYG0dwUTM"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 442
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bsYB8N0wLswyQwn0iCNVVfzGWn6RFA54hnr7nkAQmF8kZ7Ejlb%2FxFsGrOjKIUs1vNU1eY0Djo5AwjuATfOz3MrtqWVrkG6TpSQ%2BgGlUS5BaRspv2oB%2BI4VXGde0%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f5985266e48c225-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:20:42.732 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:35
+And match $ contains '"email":"charles.morris@reqres.in"'
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+  '"email":"charles.morris@reqres.in"'
+
+
+src/test/java/examples/users/get_users.feature:35
+07:20:44.323 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:21:57.765 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:21:57.793 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648902117793
+07:21:57.926 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Get user with specific id$
+07:22:01.959 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:22:02.676 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:22:03.339 [main] DEBUG com.intuit.karate - response time in milliseconds: 652
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:22:03 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"11c-fbAvBCQSZgUU6dvLRqxYG0dwUTM"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 523
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=neA3tvbvZZQCexHywJAeejuC8Er1EsP8PSTG%2BUMDE%2BHHh6lyWvkgA1PgERGtbn%2BP5vNpBln2LYrrrpLlKgVV4nm3fwsD9piU0ikGaq6tLMWkyyGEXDg0VBbvnCE%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f59871eff0be3e2-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:22:03.530 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:35
+And match $ contains 'email:"charles.morris@reqres.in"'
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+  'email:"charles.morris@reqres.in"'
+
+
+src/test/java/examples/users/get_users.feature:35
+07:22:05.215 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:22:12.082 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:22:12.096 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648902132096
+07:22:12.161 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 29 - ^Get user with specific id$
+07:22:13.957 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:22:14.339 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:22:14.705 [main] DEBUG com.intuit.karate - response time in milliseconds: 362
+1 < 200
+1 < Date: Sat, 02 Apr 2022 12:22:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"11c-fbAvBCQSZgUU6dvLRqxYG0dwUTM"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 534
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TUAHfJ8BUFR2OQH9n00KqPDvvOEFRt7flPidUTpwKdOWhYEEDj1Xt%2FhwAmdyAgHRLg0fTXTmBsMcb09GS02OSSUaIddDyUnU3EMLbiS2TODb%2B8cQSuRY75tgkTc%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 6f5987661ffdf893-MDE
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+07:22:14.817 [main] ERROR com.intuit.karate - src/test/java/examples/users/get_users.feature:35
+And match $ contains email:"charles.morris@reqres.in"
+match failed: CONTAINS
+  $ | data types don't match (MAP:STRING)
+  {"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+  'charles.morris@reqres.in'
+
+
+src/test/java/examples/users/get_users.feature:35
+07:22:16.506 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
+07:27:13.138 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:27:13.151 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1648902433149
+07:27:13.217 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 39 - ^get users with id .* and first name .*  Datadriven 2$
+07:27:16.739 [main] INFO  com.intuit.karate - karate.env system property was: null 
+07:27:18.226 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/examples/users/get_users.feature
