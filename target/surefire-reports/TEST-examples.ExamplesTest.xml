@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.ExamplesTest" time="7.495" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\proyectos\karate-poc\target\test-classes;D:\proyectos\karate-poc\target\classes;C:\Users\julian\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\julian\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\julian\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\julian\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\julian\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\julian\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\julian\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\julian\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\julian\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\julian\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\julian\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\julian\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\julian\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\julian\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\julian\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\julian\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\julian\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\julian\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\julian\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\julian\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\julian\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\julian\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\julian\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\julian\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\julian\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\julian\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\julian\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\julian\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\julian\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\julian\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\julian\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\julian\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\julian\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\julian\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\julian\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\julian\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\julian\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\julian\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\julian\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\julian\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\julian\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\julian\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\julian\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\julian\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\julian\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\julian\.m2\repository\net\masterthought\cucumber-reporting\5.3.1\cucumber-reporting-5.3.1.jar;C:\Users\julian\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\julian\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\julian\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\julian\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.1\jackson-datatype-jsr310-2.10.1.jar;C:\Users\julian\.m2\repository\org\apache\velocity\velocity-engine-core\2.1\velocity-engine-core-2.1.jar;C:\Users\julian\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\julian\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\julian\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\julian\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\julian\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\julian\.m2\repository\org\jsoup\jsoup\1.12.1\jsoup-1.12.1.jar;C:\Users\julian\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20191001.1\owasp-java-html-sanitizer-20191001.1.jar;C:\Users\julian\.m2\repository\com\google\guava\guava\27.1-jre\guava-27.1-jre.jar;C:\Users\julian\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\julian\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\julian\.m2\repository\org\checkerframework\checker-qual\2.5.2\checker-qual-2.5.2.jar;C:\Users\julian\.m2\repository\com\google\errorprone\error_prone_annotations\2.2.0\error_prone_annotations-2.2.0.jar;C:\Users\julian\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\julian\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar;C:\Users\julian\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\julian\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\julian\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.boot.library.path" value="C:\workspace\jdk-21.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\julian\AppData\Local\Temp\surefire10864672817052393014\surefirebooter-20240827173452965_3.jar C:\Users\julian\AppData\Local\Temp\surefire10864672817052393014 2024-08-27T17-34-50_327-jvmRun1 surefire-20240827173452965_1tmp surefire_0-20240827173452965_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\proyectos\karate-poc\target\test-classes;D:\proyectos\karate-poc\target\classes;C:\Users\julian\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\julian\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\julian\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\julian\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\julian\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\julian\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\julian\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\julian\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\julian\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\julian\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\julian\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\julian\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\julian\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\julian\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\julian\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\julian\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\julian\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\julian\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\julian\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\julian\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\julian\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\julian\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\julian\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\julian\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\julian\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\julian\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\julian\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\julian\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\julian\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\julian\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\julian\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\julian\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\julian\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\julian\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\julian\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\julian\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\julian\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\julian\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\julian\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\julian\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\julian\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\julian\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\julian\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\julian\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\julian\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\julian\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\julian\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\julian\.m2\repository\net\masterthought\cucumber-reporting\5.3.1\cucumber-reporting-5.3.1.jar;C:\Users\julian\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\julian\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\julian\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\julian\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.1\jackson-datatype-jsr310-2.10.1.jar;C:\Users\julian\.m2\repository\org\apache\velocity\velocity-engine-core\2.1\velocity-engine-core-2.1.jar;C:\Users\julian\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\julian\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\julian\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\julian\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\julian\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\julian\.m2\repository\org\jsoup\jsoup\1.12.1\jsoup-1.12.1.jar;C:\Users\julian\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20191001.1\owasp-java-html-sanitizer-20191001.1.jar;C:\Users\julian\.m2\repository\com\google\guava\guava\27.1-jre\guava-27.1-jre.jar;C:\Users\julian\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\julian\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\julian\.m2\repository\org\checkerframework\checker-qual\2.5.2\checker-qual-2.5.2.jar;C:\Users\julian\.m2\repository\com\google\errorprone\error_prone_annotations\2.2.0\error_prone_annotations-2.2.0.jar;C:\Users\julian\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\julian\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar;C:\Users\julian\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\julian\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\julian\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\julian"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\workspace\jdk-21.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\proyectos\karate-poc"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\julian\AppData\Local\Temp\surefire10864672817052393014\surefirebooter-20240827173452965_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS"/>
+    <property name="user.name" value="julian"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.1+12"/>
+    <property name="localRepository" value="C:\Users\julian\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\julian\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="D:\proyectos\karate-poc"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\workspace\jdk-21.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\workspace\allure-2.25.0\bin;D:\workspace\apache-maven-3.9.6\bin;C:\workspace\jdk-21.0.1\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\dotnet\;C:\workspace\node-v20.12.2;C:\Users\julian\AppData\Local\Microsoft\WindowsApps;;C:\Users\julian\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testParallel" classname="examples.ExamplesTest" time="7.445">
+    <failure message="status code was: 403, expected: 201, response time in milliseconds: 340, url: https://restful-booker.herokuapp.com/booking/1, response: &#10;Forbidden&#10;classpath:examples/sample/resftul_booker.feature:30&#10;match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  &apos;Emma&apos;&#10;  &apos;Emma 2&apos;&#10;&#10;classpath:examples/users/get_users.feature:12&#10;js failed:&#10;&gt;&gt;&gt;&gt;&#10;01: people&#10;&lt;&lt;&lt;&lt;&#10;org.graalvm.polyglot.PolyglotException: ReferenceError: &quot;people&quot; is not defined&#10;- &lt;js&gt;.:program(Unnamed:1)&#10;&#10;classpath:examples/users/get_users.feature:39&#10;match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  &apos;Missing email or username&apos;&#10;  &apos;Missing email or username1&apos;&#10;&#10;classpath:examples/users/register_users.feature:37&#10;match failed: EQUALS&#10;  $ | not equal (STRING:STRING)&#10;  &apos;leader&apos;&#10;  &apos;leader1&apos;&#10;&#10;classpath:examples/users/register_users.feature:54 ==&gt; expected: &lt;0&gt; but was: &lt;5&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 403, expected: 201, response time in milliseconds: 340, url: https://restful-booker.herokuapp.com/booking/1, response: 
+Forbidden
+classpath:examples/sample/resftul_booker.feature:30
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Emma'
+  'Emma 2'
+
+classpath:examples/users/get_users.feature:12
+js failed:
+>>>>
+01: people
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "people" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/users/get_users.feature:39
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Missing email or username'
+  'Missing email or username1'
+
+classpath:examples/users/register_users.feature:37
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'leader'
+  'leader1'
+
+classpath:examples/users/register_users.feature:54 ==> expected: <0> but was: <5>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[17:34:56.345 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:34:56.383 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+17:34:58.420 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:58.420 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:58.420 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:58.420 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:58.420 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:58.562 [pool-3-thread-1] ERROR c.intuit.karate.core.FeatureRuntime - classpath:examples/users/get_users.feature[3:39] dynamic expression evaluation failed: people
+17:34:58.874 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/1
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:58.874 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:58.874 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/3
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:58.875 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 46
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"title":"algo","body":"post body","userId":1}
+
+17:34:58.875 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://restful-booker.herokuapp.com/auth
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 45
+1 > Host: restful-booker.herokuapp.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"username":"admin","password":"password123"}
+
+17:34:59.492 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 610
+1 < 200
+1 < Date: Tue, 27 Aug 2024 22:34:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1723832059&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2B2%2F5AoXiEs57k9OVX3OkM3pDsPjKPSgD77pOlRso3EY%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1723832059&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2B2%2F5AoXiEs57k9OVX3OkM3pDsPjKPSgD77pOlRso3EY%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 796
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f8834c83fd9a9-MIA
+{"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:34:59.492 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 610
+1 < 200
+1 < Date: Tue, 27 Aug 2024 22:34:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724464087&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=JqkyGdPGN%2FRWChyv0CKWKRDn0k4pqB%2BsPmiiBTeE07g%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724464087&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=JqkyGdPGN%2FRWChyv0CKWKRDn0k4pqB%2BsPmiiBTeE07g%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 4839
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f8834ce46da2f-MIA
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:34:59.492 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 610
+1 < 200
+1 < Date: Tue, 27 Aug 2024 22:34:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724335202&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=uAdbwTQaspOapl%2Fl8vB3eKcTo%2FgnEbPWQJzcn0LJz0M%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724335202&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=uAdbwTQaspOapl%2Fl8vB3eKcTo%2FgnEbPWQJzcn0LJz0M%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"112-EeInfgHWtnxhYRnwgZUB667e024"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1557
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f8834c9214c20-MIA
+{"data":{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:34:59.545 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/users/get_users.feature:12
+And match response.data.first_name == 'Emma 2'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Emma'
+  'Emma 2'
+
+classpath:examples/users/get_users.feature:12
+17:34:59.561 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:59.562 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:59.567 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:59.569 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/1
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:59.571 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:59.576 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:59.586 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 709
+1 < 200
+1 < Server: Cowboy
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724798098&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=8nQ3FghMoP1w7wlhuS8n3lK30qXLVvDxDS7ClZxqmtA%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724798098&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=8nQ3FghMoP1w7wlhuS8n3lK30qXLVvDxDS7ClZxqmtA%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 27
+1 < Etag: W/"1b-/Wd2ukcy25LCiTwzMCy860H7XZk"
+1 < Date: Tue, 27 Aug 2024 22:34:58 GMT
+1 < Via: 1.1 vegur
+{"token":"c462b48cb3a8703"}
+
+17:34:59.586 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 709
+1 < 201
+1 < Date: Tue, 27 Aug 2024 22:34:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 72
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724798098&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=aF7EAJMoWCnLFvoEjL25f5rIHLR3YVlecSDcDCFkkRc%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724798098&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=aF7EAJMoWCnLFvoEjL25f5rIHLR3YVlecSDcDCFkkRc%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1724798126
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/posts/101
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"48-ty18YLk71l8HtpgggC+U8inqCtk"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f8834dbac0291-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "title": "algo",
+  "body": "post body",
+  "userId": 1,
+  "id": 101
+}
+
+17:34:59.592 [pool-2-thread-2] INFO  com.intuit.karate - [print] c462b48cb3a8703 
+17:34:59.601 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+2 > DELETE https://restful-booker.herokuapp.com/booking/1
+2 > Content-Type: application/json
+2 > Authorisation: Basic YWRtaW46cGFzc3dvcmQxMjM=]
+2 > Host: restful-booker.herokuapp.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+17:34:59.602 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:59.610 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 50
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"eve.holt@reqres.in","password":"pistol"}
+
+17:34:59.737 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 168
+1 < 200
+1 < Date: Tue, 27 Aug 2024 22:34:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724464087&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=JqkyGdPGN%2FRWChyv0CKWKRDn0k4pqB%2BsPmiiBTeE07g%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724464087&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=JqkyGdPGN%2FRWChyv0CKWKRDn0k4pqB%2BsPmiiBTeE07g%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 4839
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f8836788d4bff-MIA
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:34:59.750 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:59.753 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 182
+1 < 200
+1 < Date: Tue, 27 Aug 2024 22:34:58 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1723832059&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2B2%2F5AoXiEs57k9OVX3OkM3pDsPjKPSgD77pOlRso3EY%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1723832059&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2B2%2F5AoXiEs57k9OVX3OkM3pDsPjKPSgD77pOlRso3EY%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-P3iKcVpIgCj9HqYeOOrGLX8qJVc"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 796
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f88369e684976-MIA
+{"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:34:59.758 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/register
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 32
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"email":"","password":"pistol"}
+
+17:34:59.766 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:59.775 [pool-2-thread-3] INFO  com.intuit.karate - [print] {
+  "name": "morpheus",
+  "job": "leader",
+  "email": "morpheus@gmail.com",
+  "password": "435435"
+}
+ 
+17:34:59.780 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 83
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader","email":"morpheus@gmail.com","password":"435435"}
+
+17:34:59.782 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 204
+1 < 200
+1 < Date: Tue, 27 Aug 2024 22:34:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724728663&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=1U00EePQYRLDUpicQ%2FsvLProwcxP9d8qzRznC%2FmtyzU%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724728663&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=1U00EePQYRLDUpicQ%2FsvLProwcxP9d8qzRznC%2FmtyzU%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"11c-fbAvBCQSZgUU6dvLRqxYG0dwUTM"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: HIT
+1 < Age: 1555
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f88369e0eda0b-MIA
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:34:59.793 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:59.798 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:34:59.942 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 340
+2 < 403
+2 < Server: Cowboy
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724798099&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=DCLHoe7ycRphvNKc1uZE51DAcikHQqbEyLiJofjlz8U%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724798099&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=DCLHoe7ycRphvNKc1uZE51DAcikHQqbEyLiJofjlz8U%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < Connection: keep-alive
+2 < X-Powered-By: Express
+2 < Content-Type: text/plain; charset=utf-8
+2 < Content-Length: 9
+2 < Etag: W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+2 < Date: Tue, 27 Aug 2024 22:34:59 GMT
+2 < Via: 1.1 vegur
+Forbidden
+
+17:34:59.960 [pool-2-thread-2] ERROR com.intuit.karate - classpath:examples/sample/resftul_booker.feature:30
+Then status 201
+status code was: 403, expected: 201, response time in milliseconds: 340, url: https://restful-booker.herokuapp.com/booking/1, response: 
+Forbidden
+classpath:examples/sample/resftul_booker.feature:30
+17:34:59.970 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:34:59.979 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+17:35:00.028 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 417
+1 < 200
+1 < Date: Tue, 27 Aug 2024 22:34:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 36
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724798099&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=uvmTbN9KKSEKXWyFSLx%2BtUOMKWLVMQPZeEieYsTpSeo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724798099&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=uvmTbN9KKSEKXWyFSLx%2BtUOMKWLVMQPZeEieYsTpSeo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f8836b87c4c2c-MIA
+{"id":4,"token":"QpwL5tke4Pnpja7X4"}
+
+17:35:00.042 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 242
+1 < 200
+1 < Date: Tue, 27 Aug 2024 22:34:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1720698805&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=%2B8EjqqkkeS5Z82cRgIB1f8cXfE4wSzuTqfsa1sx6etg%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1720698805&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=%2B8EjqqkkeS5Z82cRgIB1f8cXfE4wSzuTqfsa1sx6etg%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1720698842
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 9206
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f88383f9809d2-MIA
+1 < alt-svc: h3=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+17:35:00.073 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+17:35:00.178 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 419
+1 < 400
+1 < Date: Tue, 27 Aug 2024 22:34:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 37
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724798099&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=uvmTbN9KKSEKXWyFSLx%2BtUOMKWLVMQPZeEieYsTpSeo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724798099&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=uvmTbN9KKSEKXWyFSLx%2BtUOMKWLVMQPZeEieYsTpSeo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"25-Ik70kof1lbc973ShN5FoVPxYn7A"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f8837bd564964-MIA
+{"error":"Missing email or username"}
+
+17:35:00.183 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/users/register_users.feature:37
+And match response.error == 'Missing email or username1'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Missing email or username'
+  'Missing email or username1'
+
+classpath:examples/users/register_users.feature:37
+17:35:00.193 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 410
+1 < 201
+1 < Date: Tue, 27 Aug 2024 22:34:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 133
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724798099&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=uvmTbN9KKSEKXWyFSLx%2BtUOMKWLVMQPZeEieYsTpSeo%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724798099&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=uvmTbN9KKSEKXWyFSLx%2BtUOMKWLVMQPZeEieYsTpSeo%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"85-Cv/1pqK4xsICPVLQhetKDC+1dds"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f8837dc9f498c-MIA
+{"name":"morpheus","job":"leader","email":"morpheus@gmail.com","password":"435435","id":"489","createdAt":"2024-08-27T22:34:59.366Z"}
+
+17:35:00.211 [pool-2-thread-3] ERROR com.intuit.karate - classpath:examples/users/register_users.feature:54
+And match response.job == valid_user.job + "1"
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'leader'
+  'leader1'
+
+classpath:examples/users/register_users.feature:54
+17:35:00.302 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 322
+1 < 201
+1 < Date: Tue, 27 Aug 2024 22:34:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724798099&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=9fbFFMTLktErsTbdmvHjpswi4Xkc6CcfvdskzzeCsN8%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724798099&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=9fbFFMTLktErsTbdmvHjpswi4Xkc6CcfvdskzzeCsN8%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 998
+1 < X-Ratelimit-Reset: 1724798126
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 8b9f88395cd88759-MIA
+1 < alt-svc: h3=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+17:35:00.308 [pool-2-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
+17:35:00.314 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 238
+2 < 200
+2 < Date: Tue, 27 Aug 2024 22:34:59 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1719494788&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=8SQ%2Bmm6iPs4IoIq0wgYCuyC9ooOv2sQ1cK0rhS0v4kU%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1719494788&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=8SQ%2Bmm6iPs4IoIq0wgYCuyC9ooOv2sQ1cK0rhS0v4kU%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1719494838
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 9659
+2 < Server: cloudflare
+2 < CF-RAY: 8b9f8839fa2d3dd2-MIA
+2 < alt-svc: h3=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+---------------------------------------------------------
+feature: classpath:examples/posts/create_posts.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 1,1003
+---------------------------------------------------------
+
+17:35:00.665 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:examples/posts/create_posts.feature
+---------------------------------------------------------
+feature: classpath:examples/sample/resftul_booker.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 1,4682
+---------------------------------------------------------
+
+17:35:00.850 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 5 (3 remaining) classpath:examples/sample/resftul_booker.feature
+---------------------------------------------------------
+feature: classpath:examples/users/get_users.feature
+scenarios:  7 | passed:  5 | failed:  2 | time: 3,7536
+---------------------------------------------------------
+
+17:35:01.095 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 5 (2 remaining) classpath:examples/users/get_users.feature
+---------------------------------------------------------
+feature: classpath:examples/users/register_users.feature
+scenarios:  3 | passed:  1 | failed:  2 | time: 1,2963
+---------------------------------------------------------
+
+17:35:01.302 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 5 (1 remaining) classpath:examples/users/register_users.feature
+---------------------------------------------------------
+feature: classpath:examples/users/users.feature
+scenarios:  2 | passed:  2 | failed:  0 | time: 0,8587
+---------------------------------------------------------
+
+17:35:01.399 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 5 of 5 (0 remaining) classpath:examples/users/users.feature
+Karate version: 1.5.0
+======================================================
+elapsed:   6,54 | threads:    5 | thread time: 8,48 
+features:     5 | skipped:    0 | efficiency: 0,26
+scenarios:   14 | passed:     9 | failed: 5
+======================================================
+>>> failed features:
+status code was: 403, expected: 201, response time in milliseconds: 340, url: https://restful-booker.herokuapp.com/booking/1, response: 
+Forbidden
+classpath:examples/sample/resftul_booker.feature:30
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Emma'
+  'Emma 2'
+
+classpath:examples/users/get_users.feature:12
+js failed:
+>>>>
+01: people
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "people" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/users/get_users.feature:39
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Missing email or username'
+  'Missing email or username1'
+
+classpath:examples/users/register_users.feature:37
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'leader'
+  'leader1'
+
+classpath:examples/users/register_users.feature:54
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///D:/proyectos/karate-poc/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

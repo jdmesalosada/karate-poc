@@ -9,29 +9,32 @@
     <script type="text/javascript" src="res/jquery.min.js"></script>
     <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
     <script type="text/javascript" src="res/bootstrap.min.js"></script>
-    <script type="text/javascript" src="res/karate-report.js"></script>
-    <title>Karate Summary Report</title>  
+    <script type="text/javascript" src="res/karate-report.js"></script>    
+    <title>Karate Summary Report</title>
   </head>
-  <body>   
+  <body>
     <div id="root-container">
       <div id="leftnav">
-                
+        
         <div>
   <div class="nav-logo">
-    <a href="karate-summary.html">
-      <img src="karate-logo.svg" alt="Karate"/>
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">3</div>
     </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
   </div>
   <div id="nav-type">
     <div>Features</div>
-  </div>         
+  </div>
   <div id="nav-date">
-    <div>2022-04-02 07:27:18 AM</div>
-  </div>        
+    <div>2024-08-27 05:35:01 p. m.</div>
+  </div>
 </div>
 
       </div>
@@ -39,7 +42,7 @@
         <div class="page-heading alert alert-primary">
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <a href="karate-timeline.html">Timeline</a>
-        </div>       
+        </div>
         <table class="features-table table table-sm">
           <thead>
             <tr>
@@ -52,16 +55,56 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="failed">              
+            <tr class="passed">
               <td>
-                <a href="src.test.java.examples.users.get_users.html">src/test/java/examples/users/get_users.feature</a>
+                <a href="examples.posts.create_posts.html">examples/posts/create_posts.feature</a>
               </td>
-              <td>Get Users</td>
+              <td title="for help, see: https://github.com/intuit/karate/wiki/IDE-Support">create posts</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1100</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="examples.sample.resftul_booker.html">examples/sample/resftul_booker.feature</a>
+              </td>
+              <td>Restful booker</td>
               <td class="num">0</td>
               <td class="num">1</td>
               <td class="num">1</td>
-              <td class="num">1</td>            
-            </tr>            
+              <td class="num">1468</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="examples.users.get_users.html">examples/users/get_users.feature</a>
+              </td>
+              <td>Get Users</td>
+              <td class="num">5</td>
+              <td class="num">2</td>
+              <td class="num">7</td>
+              <td class="num">3754</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="examples.users.register_users.html">examples/users/register_users.feature</a>
+              </td>
+              <td>Register users</td>
+              <td class="num">1</td>
+              <td class="num">2</td>
+              <td class="num">3</td>
+              <td class="num">1296</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="examples.users.users.html">examples/users/users.feature</a>
+              </td>
+              <td title="for help, see: https://github.com/intuit/karate/wiki/IDE-Support">sample karate test script</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">859</td>
+            </tr>
           </tbody>
         </table>
       </div>
