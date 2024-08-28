@@ -5,7 +5,7 @@
 
 
 #### RUN TESTS
-``` mvn test ```
+``` mvn clean test ```
 
 #### RUN TEST BY TAGS:
 ```mvn clean test "karate.options=--tags @regression```
