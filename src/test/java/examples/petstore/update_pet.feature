@@ -68,6 +68,9 @@ Feature: Update a pet
     When method get
     Then status 200
 
-    * def currentId = response.find(x => x.id == '#(petId)')
+    * def currentId = response.find(x => x.id == petId).id
+    * print "actual id:", petId
+    * print "current id is:", currentId
+
     * match currentId == petId
 
