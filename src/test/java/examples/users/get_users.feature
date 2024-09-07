@@ -27,16 +27,28 @@ Feature: Get Users
       | read('classpath:data/users/validate_users.csv') |
 
 
-  @get_users
+  @get_users_csv
   Scenario Outline: get users with id <id> and first name <first_name>  Datadriven 2
-    * def people = read('classpath:data/users/validate_users.csv')
     Given path '/api/users/<id>'
     When method get
     Then status 200
     And match response.data.id == <id>
     And match response.data.first_name == '<first_name>'
+    And match response.data.email == '<email>'
     Examples:
-      | people |
+      | read('classpath:data/users/validate_users.csv') |
+
+  @get_users_json
+  Scenario Outline: get users with id <id> and first name <first_name>  Datadriven 3
+    Given path '/api/users/<id>'
+    When method get
+    Then status 200
+    And match response.data.id == <id>
+    And match response.data.first_name == '<first_name>'
+    And match response.data.email == '<email>'
+    Examples:
+      | read('classpath:data/users/validate_users.json') |
+
 
   Scenario: Get user with specific id
     Given path '/api/users/5'

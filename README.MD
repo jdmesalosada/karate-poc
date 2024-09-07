@@ -8,7 +8,7 @@
 ``` mvn clean test ```
 
 #### RUN TEST BY TAGS:
-```mvn clean test "karate.options=--tags @regression```
+```mvn clean test -Dkarate.options="--tags @regression```
 
 #### RUN TEST BY RUNNER:
 ```mvn clean test -Dtest=CreatePostsRunner```

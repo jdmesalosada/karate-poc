@@ -51,7 +51,7 @@ Then status 200
     Then status 201
     And match response.password == valid_user.password
     And match response.email == valid_user.email
-    And match response.job == valid_user.job + "1"
+    And match response.job == valid_user.job
 
     * print 'register user id is: ', response.id
 
